@@ -1,5 +1,5 @@
 import captura from './Captura.png';
-
+import './presentacio.css';
 function Presentacio() {
     return (
       <div className="">

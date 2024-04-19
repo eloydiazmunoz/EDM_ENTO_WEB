@@ -1,0 +1,30 @@
+/* Estil general del contenidor */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Vora de color gris clar */
+    border-radius: 8px; /* Voress arrodonides */
+    background-color: #f9f9f9; /* Fons de color gris molt clar */
+}
+
+/* Estil per al paràgraf */
+p {
+    font-family: 'Arial', sans-serif; /* Tipus de lletra Arial */
+    font-size: 16px; /* Mida de la lletra */
+    color: #333; /* Color de text fosc */
+    text-align: center; /* Alineació del text */
+    margin: 15px 0; /* Marge amunt i avall */
+    line-height: 1.5; /* Espai entre línies */
+}
+
+/* Estil per a la imatge */
+img {
+    width: 100%; /* Ample complet dins del seu contenidor */
+    max-width: 300px; /* Ample màxim per evitar que sigui massa gran */
+    height: auto; /* Alçada automàtica per mantenir la proporció */
+    border-radius: 5px; /* Voress lleugerament arrodonides per a la imatge */
+}
