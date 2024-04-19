@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Test from './Test/test.js';
+import Presentacio from './Prentacio/presentacio.js';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Test/>
+        <Presentacio/>
         <p>
           Edit <code>src/App.js</code> and save to reload.ELOY 
         </p>
