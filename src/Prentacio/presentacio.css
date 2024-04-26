@@ -11,13 +11,13 @@ div {
 }
 
 h1 {
-    color: #003366; /* Dark blue for a formal and professional look */
-    font-size: 2rem; /* Prominent size for the title */
-    font-weight: bold; /* Makes the title bold */
+    color: #003366; 
+    font-size: 2rem; 
+    font-weight: bold; 
     margin: 0;
-    margin-bottom: 20px; /* Adds space below the title */
-    text-transform: uppercase; /* Uppercase letters for more formality */
-    letter-spacing: 2px; /* Increases spacing between letters for sophistication */
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
 }
 
 p {
