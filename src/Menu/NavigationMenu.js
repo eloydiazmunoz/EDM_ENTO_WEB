@@ -7,10 +7,10 @@ const NavigationMenu = () => {
     <nav className="nav">
       <ul className="navList">
         <li className="navItem">
-          <a href="/" className="navLink">Inicio</a>
+          <a href="/" className="navLink">Inici</a>
         </li>
         <li className="navItem">
-          <a href="about" className="navLink">Sobre Nosotros</a>
+          <a href="about" className="navLink">Sobre Nosotres</a>
         </li>
       </ul>
     </nav>

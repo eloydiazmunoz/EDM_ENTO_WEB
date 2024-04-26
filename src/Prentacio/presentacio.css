@@ -1,16 +1,16 @@
 /* presentacio.css */
-div {
+.presentacio {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 50vh;
     background-color: #f5f5f5;
     font-family: 'Arial', sans-serif;
     padding: 20px;
 }
 
-h1 {
+.header {
     color: #003366; 
     font-size: 2rem; 
     font-weight: bold; 
@@ -20,7 +20,7 @@ h1 {
     letter-spacing: 2px; 
 }
 
-p {
+.text {
     color: #2f4f4f;
     font-size: 1.2rem;
     text-align: center;
@@ -28,7 +28,7 @@ p {
     max-width: 600px;
 }
 
-img {
+.imatge {
     max-width: 100%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
