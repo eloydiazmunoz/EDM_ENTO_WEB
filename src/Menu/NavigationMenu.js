@@ -10,7 +10,7 @@ const NavigationMenu = () => {
           <a href="/" className="navLink">Inici</a>
         </li>
         <li className="navItem">
-          <a href="about" className="navLink">Sobre Nosotres</a>
+          <a href="about" className="navLink">Sobre Nosaltres</a>
         </li>
       </ul>
     </nav>
