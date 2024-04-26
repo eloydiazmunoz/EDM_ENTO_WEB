@@ -1,0 +1,33 @@
+/* NavigationMenu.css */
+
+.nav {
+    background-color: #4A90E2;
+    padding: 10px;
+  }
+  
+  .navList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin: 0 10px;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .navLink:hover {
+    background-color: #6B9EDF;
+  }
+  
