@@ -1,7 +1,7 @@
 function Test() {
   return (
     <div className="">
-      Soc un test
+      <h1>Soc un test</h1>
     </div>
   );
 }
