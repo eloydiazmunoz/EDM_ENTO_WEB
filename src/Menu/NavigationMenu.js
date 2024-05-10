@@ -1,20 +1,22 @@
-// NavigationMenu.js
 import React from 'react';
-import './NavigationMenu.css'; // Importa el CSS aquí
+import './NavigationMenu.css';
 
 const NavigationMenu = () => {
   return (
     <nav className="nav">
-      <ul className="navList">
-        <li className="navItem">
-          <a href="/" className="navLink">Inici</a>
+      <div className="nav-brand">
+        <a href="/" className="brand-link">Sobre Mi</a>
+      </div>
+      <ul className="nav-list">
+        <li className="nav-item">
+          <a href="/" className="nav-link">Inici</a>
         </li>
-        <li className="navItem">
-          <a href="about" className="navLink">Sobre Nosaltres</a>
+        <li className="nav-item">
+          <a href="/about" className="nav-link">Currículum</a>
         </li>
       </ul>
     </nav>
   );
 };
 
-export default NavigationMenu
+export default NavigationMenu;
