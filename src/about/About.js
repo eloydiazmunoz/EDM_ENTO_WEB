@@ -1,4 +1,5 @@
-import curriculum from './curriculum.png';
+import curriculumImage from './curriculum.png'; 
+import curriculumPdf from './curriculum.pdf'; 
 import './about.css';
 
 function About() {
@@ -9,8 +10,8 @@ function About() {
                 <hr className="divider"/>
             </div>
             <div className="content">
-                <img className="curriculumImage" src={curriculum} alt="Imatge del currículum" />
-                <a href={curriculum} download className="btn-download">Descarrega el currículum</a>
+                <img className="curriculumImage" src={curriculumImage} alt="Imatge del currículum" />
+                <a href={curriculumPdf} download="Curriculum_Eloy_Diaz_Munoz.pdf" className="btn-download">Descarrega el currículum</a>
             </div>
         </div>
     );
