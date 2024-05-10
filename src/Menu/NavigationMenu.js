@@ -14,6 +14,9 @@ const NavigationMenu = () => {
         <li className="nav-item">
           <a href="/about" className="nav-link">Currículum</a>
         </li>
+        <li className="nav-item">
+          <a href="/hobbies" className="nav-link">Aficions</a>
+        </li>
       </ul>
     </nav>
   );

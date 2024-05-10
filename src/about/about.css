@@ -71,3 +71,36 @@
 .btn-download:hover {
     background-color: #002244;
 }
+
+@media (max-width: 768px) {
+    .formalHeading {
+        font-size: 2rem; 
+    }
+    
+    .about-container {
+        padding: 20px;
+        min-height: 60vh;
+    }
+
+    .divider {
+        width: 80%; 
+    }
+
+    .curriculumImage {
+        max-width: 90%; 
+    }
+    
+    .btn-download {
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .formalHeading {
+        font-size: 1.5rem; 
+    }
+    
+    .divider {
+        width: 90%; 
+    }
+}

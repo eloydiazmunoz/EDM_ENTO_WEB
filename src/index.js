@@ -1,30 +1,38 @@
-// index.js
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './index.css';
-import App from './App';
-import About from './about/About';
-import NavigationMenu from './Menu/NavigationMenu.js';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import About from "./about/About";
+import Hobbies from "./hobbies";
+import NavigationMenu from "./Menu/NavigationMenu.js";
 
 // Rutas definidas para tu aplicación
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
   {
     path: "about",
-    element: <About/>,
+    element: <About />,
+  },
+  {
+    path: "hobbies",
+    element: <Hobbies />,
+  },
+  {
+    path: "*",
+    element: <App />,
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div>
-    <NavigationMenu />
-    <RouterProvider router={router}/>
+      <NavigationMenu />
+      <RouterProvider router={router} />
     </div>
   </React.StrictMode>
 );
