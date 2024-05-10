@@ -1,21 +1,73 @@
-.curriculumImage {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
 }
-.formalHeading {
+
+.heading-section {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.formalHeading {
     font-size: 2.5rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.divider {
+    width: 60%;
+    height: 3px;
+    background-color: #333;
+    border: none;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.curriculumImage {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.curriculumImage:hover {
+    transform: scale(1.05);
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #002244;
 }

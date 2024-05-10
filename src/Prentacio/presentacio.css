@@ -1,36 +1,79 @@
-/* presentacio.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .presentacio {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 50vh;
-    background-color: #f5f5f5;
-    font-family: 'Arial', sans-serif;
+    min-height: 80vh;
+    background-image: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    font-family: 'Roboto', sans-serif;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header-section {
+    background-color: #003366;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .header {
-    color: #003366; 
-    font-size: 2rem; 
-    font-weight: bold; 
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
     margin: 0;
-    margin-bottom: 20px; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    color: #f3f4f6;
+    font-size: 1.2rem;
+    margin: 10px 0 0 0;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
 }
 
 .text {
     color: #2f4f4f;
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1.3rem;
     margin-bottom: 20px;
-    max-width: 600px;
 }
 
 .imatge {
-    max-width: 100%;
+    width: 60%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.imatge:hover {
+    transform: scale(1.05);
+}
+
+.btn-accio {
+    display: inline-block;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-accio:hover {
+    background-color: #002244;
 }
