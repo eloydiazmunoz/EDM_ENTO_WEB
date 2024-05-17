@@ -6,7 +6,7 @@ function Presentacio() {
   return (
     <div className="presentacio">
       <div className="header-section">
-        <h1 className="header">Eloy Díaz Muñoz</h1>
+        <h1 className="header">Eloy Diaz Muñoz</h1>
       </div>
       <div className="content">
         <p className="text">

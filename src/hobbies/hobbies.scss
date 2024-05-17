@@ -1,69 +1,109 @@
-.hobbies {
-    margin-top: 40px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f7f7f7; /* Fondo ligero */
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-.hobbies-heading {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #003366;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-}
+.contenidor-aficions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 
-.hobby-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    width: 60%; /* Ajusta según necesidades */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 20px;
-    background-color: #ffffff;
-    transition: transform 0.2s ease-in-out;
-}
-
-.hobby-item:hover {
-    transform: scale(1.05);
-}
-
-.hobby-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
+  .titol-aficions {
+    font-size: 2.5em;
     font-weight: 700;
-    color: #0077b5;
-    margin-bottom: 15px;
-}
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
-.hobby-image {
-    width: 180px; /* Ajusta según necesidades */
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 10px;
+  .element-aficio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 80vw;
+    max-width: 1200px;
+    min-height: 200px;
+    background-color: #fff;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-.hobby-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
-    color: #444444;
-    text-align: justify;
-    line-height: 1.6;
-    padding: 0 10px;
-}
-
-/* Estilo responsivo para tamaños más pequeños */
-@media (max-width: 768px) {
-    .hobby-item {
-        width: 90%;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
+
+    &.futbol {
+      background-color: #eb5757;
+    }
+
+    &.gimnàs {
+      background-color: #6fcf97;
+    }
+
+    &.videojocs {
+      background-color: #56ccf2;
+    }
+
+    .imatge-aficio {
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      border-radius: 15px;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover .imatge-aficio {
+      transform: scale(1.05);
+    }
+
+    .info-aficio {
+      padding: 20px;
+    }
+
+    .titol-aficio {
+      font-size: 1.8em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .descripcio-aficio {
+      font-size: 1.2em;
+      color: #666;
+      text-align: left;
+    }
+  }
+  @media (max-width: 768px) {
+    .element-aficio {
+      width: 90%;
+    }
+    
+    .titol-aficions {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    
+    .imatge-aficio {
+      max-height: 180px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .element-aficio {
+      width: 95%;
+    }
+    
+    .titol-aficions {
+      font-size: 1.8em;
+    }
+  }
 }
+
