@@ -1,6 +1,6 @@
 import captura from "./Captura.png";
 import linkedinIcon from "./linkedin.png";
-import "./presentacio.css";
+import "./presentacio.scss";
 
 function Presentacio() {
   return (

@@ -1,14 +1,12 @@
-import './App.css';
-import Test from './Test/test.js';
-import Presentacio from './Prentacio/presentacio.js';
+import "./App.scss";
+import Test from "./Test/test.js";
+import Presentacio from "./Prentacio/presentacio.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
-        <Presentacio/>
-
+        <Presentacio />
       </header>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import "./hobbies.css";
+import "./hobbies.scss";
 import footballImage from "./images/football.jpeg";
 import gymImage from "./images/gym.jpeg";
 import gamingImage from "./images/gaming.JPG";
