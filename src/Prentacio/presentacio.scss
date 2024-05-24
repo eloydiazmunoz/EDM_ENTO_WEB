@@ -84,36 +84,35 @@
 .btn-linkedin,
 .btn-github {
   display: inline-block;
-  background-color: #0077b5; /* Azul de LinkedIn */
+  background-color: #0077b5; 
   border: none;
   margin: 15px;
   cursor: pointer;
-  border-radius: 50%; /* Botón redondo */
-  width: 80px; /* Ancho del botón */
-  height: 80px; /* Alto del botón */
+  border-radius: 50%; 
+  width: 80px; 
+  height: 80px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
   transition: all 0.3s ease;
 }
 
 .btn-github {
-  background-color: white; /* Color de fondo blanco */
+  background-color: white;
 }
 
 .btn-linkedin:hover,
 .btn-github:hover {
-  transform: scale(1.1); /* Escalado al pasar el cursor */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .icon {
-  width: 40px; /* Tamaño del icono */
+  width: 40px; 
   height: auto;
 }
 
-/* Media Queries para responsividad */
 @media (max-width: 768px) {
   .header {
     font-size: 2.8rem;
