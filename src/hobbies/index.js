@@ -3,6 +3,8 @@ import "./hobbies.scss";
 import footballImage from "./images/football.jpeg";
 import gymImage from "./images/gym.jpeg";
 import gamingImage from "./images/gaming.JPG";
+import travelImage from "./images/travel.jpg"; // Imatge per a Viatjar
+import programmingImage from "./images/programming.jpg"; // Imatge per a Programació
 
 function Aficions() {
   return (
@@ -38,6 +40,34 @@ function Aficions() {
           <p className="descripcio-aficio">
             Els videojocs són una bona manera de relaxar-se i gaudir amb amics
             en línia.
+          </p>
+        </div>
+      </article>
+
+      {/* Nou Hobby: Viatjar */}
+      <article className="element-aficio viatjar">
+        <img src={travelImage} alt="Viatjar" className="imatge-aficio" />
+        <div className="info-aficio">
+          <h3 className="titol-aficio">Viatjar</h3>
+          <p className="descripcio-aficio">
+            Explorar nous llocs i cultures és una de les meves passions.
+            M'encanta viatjar i descobrir el món.
+          </p>
+        </div>
+      </article>
+
+      {/* Nou Hobby: Programació */}
+      <article className="element-aficio programació">
+        <img
+          src={programmingImage}
+          alt="Programació"
+          className="imatge-aficio"
+        />
+        <div className="info-aficio">
+          <h3 className="titol-aficio">Programació</h3>
+          <p className="descripcio-aficio">
+            La programació és més que una afició per a mi, és una forma de
+            crear, innovar i solucionar problemes.
           </p>
         </div>
       </article>

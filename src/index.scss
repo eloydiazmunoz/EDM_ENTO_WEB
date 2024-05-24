@@ -1,59 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
 /* Footer Styles */
 .footer {
   width: 100%;
-  background-color: #003366;
+  background: linear-gradient(135deg, #003366, #004080);
   color: #ffffff;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   position: relative;
   bottom: 0;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 .social-media {
   display: flex;
-  gap: 15px;
+  gap: 8px;
 }
 
 .social-icon {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s;
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s, filter 0.3s;
+  filter: grayscale(100%);
 }
 
 .social-icon:hover {
   transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 .footer-bottom {
-  margin-top: 20px;
-  font-size: 0.9rem;
+  margin-top: 15px; /* Aumento del margen superior */
+  font-size: 0.9rem; /* Aumento del tamaño del texto */
+  color: #cccccc;
+  font-weight: bold; /* Aumento del peso de la fuente */
+  text-transform: uppercase; /* Convertir texto a mayúsculas */
+  letter-spacing: 1px; /* Aumento del espacio entre letras */
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    gap: 20px;
+    gap: 8px;
+  }
+
+  .social-icon {
+    width: 20px;
+    height: 20px;
   }
 }

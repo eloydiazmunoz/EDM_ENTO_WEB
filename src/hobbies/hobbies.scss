@@ -53,6 +53,14 @@ body {
       background-color: #56ccf2;
     }
 
+    &.viatjar {
+      background-color: #ffd166; // Color para Viajar
+    }
+
+    &.programació {
+      background-color: Violet ; // Color para Programación
+    }
+
     .imatge-aficio {
       object-fit: cover;
       width: 200px;
@@ -81,29 +89,29 @@ body {
       text-align: left;
     }
   }
+
   @media (max-width: 768px) {
     .element-aficio {
       width: 90%;
     }
-    
+
     .titol-aficions {
       font-size: 2em;
       margin-bottom: 20px;
     }
-    
+
     .imatge-aficio {
       max-height: 180px;
     }
   }
-  
+
   @media (max-width: 480px) {
     .element-aficio {
       width: 95%;
     }
-    
+
     .titol-aficions {
       font-size: 1.8em;
     }
   }
 }
-

@@ -1,146 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
 .presentacio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    background-color: #f7f7f7; /* Fondo más claro */
-    font-family: 'Roboto', sans-serif;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
-    max-width: 900px;
-    margin: auto;
-    transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  margin: auto;
 }
 
 .header-section {
-    text-align: center;
-    margin-bottom: 30px; /* Mayor separación */
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .header {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: #003366;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25); /* Mayor sombra */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #003366;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .subheader {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #666666;
-    margin-top: -10px; /* Más cercano al encabezado */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #666666;
+  margin-top: -10px;
 }
 
 .content {
-    text-align: center;
-    margin-top: 20px;
-    width: 100%; /* Ancho total para el contenido */
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
-    color: #444444;
-    line-height: 1.8;
-    max-width: 700px;
-    margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  color: #444444;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
 }
 
 .text:hover {
-    background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .imatge {
-    max-width: 70%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    margin-bottom: 30px;
+  max-width: 70%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 30px;
 }
 
 .imatge:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.btn-linkedin {
-    display: inline-block;
-    background-color: #0077b5;
-    color: #ffffff;
-    padding: 12px 25px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-linkedin:hover {
-    background-color: #005983;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.btn-linkedin,
+.btn-github {
+  display: inline-block;
+  background-color: #0077b5; /* Azul de LinkedIn */
+  border: none;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 50%; /* Botón redondo */
+  width: 80px; /* Ancho del botón */
+  height: 80px; /* Alto del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  transition: all 0.3s ease;
 }
 
-.linkedin-icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
-    vertical-align: middle;
+.btn-github {
+  background-color: white; /* Color de fondo blanco */
+}
+
+.btn-linkedin:hover,
+.btn-github:hover {
+  transform: scale(1.1); /* Escalado al pasar el cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+.icon {
+  width: 40px; /* Tamaño del icono */
+  height: auto;
 }
 
 /* Media Queries para responsividad */
 @media (max-width: 768px) {
-    .header {
-        font-size: 2.8rem;
-    }
+  .header {
+    font-size: 2.8rem;
+  }
 
-    .subheader {
-        font-size: 1.3rem;
-    }
+  .subheader {
+    font-size: 1.3rem;
+  }
 
-    .text {
-        font-size: 1.2rem;
-        padding: 20px;
-    }
+  .text {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
 
-    .imatge {
-        max-width: 85%;
-    }
-
-    .btn-linkedin {
-        padding: 10px 20px;
-    }
+  .imatge {
+    max-width: 85%;
+  }
 }
 
 @media (max-width: 480px) {
-    .header {
-        font-size: 2.2rem;
-    }
+  .header {
+    font-size: 2.2rem;
+  }
 
-    .subheader {
-        font-size: 1.1rem;
-    }
+  .subheader {
+    font-size: 1.1rem;
+  }
 
-    .text {
-        font-size: 1rem;
-        padding: 15px;
-    }
+  .text {
+    font-size: 1rem;
+    padding: 15px;
+  }
 
-    .btn-linkedin {
-        padding: 8px 15px;
-    }
+  .imatge {
+    max-width: 90%;
+  }
 }
